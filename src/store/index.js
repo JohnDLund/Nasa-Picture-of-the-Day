@@ -29,7 +29,9 @@ export default new Vuex.Store({
         let res = await _NasaApi.get("apod?api_key=psofdkxHXsFgeowYqc2TxzASh6HYp7aklKyM9Gvp&date=" + query)
         console.log(res.data)
         commit("setActivePicture", res.data)
-      } catch (error) { console.error(error) }
+      } catch (error) {
+        console.error(error)
+      }
     },
 
     async getRandomPicture({ commit, dispatch }, count) {
@@ -37,7 +39,9 @@ export default new Vuex.Store({
         let res = await _NasaApi.get("apod?api_key=psofdkxHXsFgeowYqc2TxzASh6HYp7aklKyM9Gvp&count=" + count)
         console.log(res.data)
         commit("setActivePicture", res.data[0])
-      } catch (error) { console.error(error) }
+      } catch (error) {
+        console.error(error)
+      }
     }
 
 

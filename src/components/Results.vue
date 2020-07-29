@@ -1,25 +1,20 @@
 <template>
-  <div class="results col-12">
-    <h3></h3>
-  </div>
+  <div class="component"></div>
 </template>
-
-
 
 
 <script>
 export default {
-  name: "results",
+  name: "component",
   data() {
     return {};
   },
-
   computed: {},
-
   methods: {},
-
-  omponents: {},
+  components: {},
 };
 </script>
-<style>
+
+
+<style scoped>
 </style>
